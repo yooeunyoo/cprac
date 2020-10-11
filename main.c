@@ -1,9 +1,16 @@
 #include <stdio.h>
+#include "calculator.h"
 
 int main(){
 
-	printf("Hello");
+	int num1, num2, result;
 
-	return 0;
+	scanf("%d", &num1);
+	scanf("%d", &num2);
+
+	result = add(num1, num2);
+	printf("%d", result);
+
+	return result;
 
 }
